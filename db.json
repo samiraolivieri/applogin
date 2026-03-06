@@ -14,6 +14,11 @@
       "id": "ca13",
       "login": "samira",
       "senha": "12345"
+    },
+    {
+      "id": "5aaa",
+      "login": "livia",
+      "senha": "76643"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

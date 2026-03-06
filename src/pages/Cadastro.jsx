@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Cadastro.css";
 
 function Cadastro() {
 const[login, setLogin] = useState("")
@@ -23,7 +24,8 @@ async function cadastrar(e){
 }
 
   return (
-    <div>
+      <div className="login-container"> 
+      <div className="login-box">    
       <h2>Novo Cadastro</h2>
 
       <form onSubmit={cadastrar}>
@@ -32,7 +34,7 @@ async function cadastrar(e){
           placeholder="Login"
           value={login}
           onChange={(e) => setLogin(e.target.value)}
-        /> <br /><br />
+        />
 
         <input
           type="password"
@@ -43,6 +45,7 @@ async function cadastrar(e){
 
         <button type="submit">Cadastrar</button>
       </form>
+    </div>
     </div>
   );
 }
